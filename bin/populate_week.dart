@@ -26,7 +26,7 @@ void main(final List<String> arguments) {
     if (i == 0) {
       date = start;
     } else {
-      date = start.add(Duration(days: i));
+      date = start.add(Duration(days: i * 7));
     }
     final weekNumber = (date.day / 7).floor() + 1;
     final year = date.year;
